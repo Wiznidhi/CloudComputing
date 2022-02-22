@@ -2,7 +2,7 @@ aws
 sudo su
 yum update -y
 yum install httpd -y
-chlconfig htttpd on
+chkconfig htttpd on
 cd /var/www/html
 aws s3 sync s3://bucketname /var/www/html
 service httpd start
